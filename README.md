@@ -1,6 +1,6 @@
 TODO : Update contents of this later
 
-** QUERY ONE ! **
+**QUERY ONE ! **
 
 Questions to answer :
 1. What are the top-paying jobs for my role ?
