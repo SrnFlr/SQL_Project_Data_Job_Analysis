@@ -18,5 +18,6 @@
             "database": "sql_course",
             "username": "postgres"
         }
-    ]
+    ],
+    "editor.wordWrap": "on"
 }
