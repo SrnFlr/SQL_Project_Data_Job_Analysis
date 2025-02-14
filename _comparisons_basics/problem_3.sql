@@ -1,5 +1,4 @@
-/*
-🟩 Problem 3 - Comparisons
+/* 🟩 Problem 3 - Comparisons
 ❓Question:
 
 In the job_postings_fact table get the job_id, job_title_short, job_location, job_via,  job_schedule_type, and salary_year_avg columns. Order by job_id in ascending order. Only look at jobs that are not ‘Part-time’ jobs.
