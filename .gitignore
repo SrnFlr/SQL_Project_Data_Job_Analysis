@@ -1,10 +1,4 @@
 /.DS_Store
 /.vscode
 /csv_files
-/_comparisons_basics
-/aggregation_basics
-/alias_samples
-/joins_basics
-/null_basics
-/operations_basics
-/wildcards_samples
+/Part 1 - BASIC Section
