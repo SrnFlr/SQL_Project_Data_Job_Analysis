@@ -6,3 +6,19 @@ In the job_postings_fact table find the minimum and maximum yearly salaries (sal
 To be more accurate use LIKE when searching for the location. In case locations aren’t in a specific format like `San Francisco, CA'.
 
 */
+
+SELECT
+    MIN(salary_year_Avg) AS min_salary,
+    MAX(salary_year_avg) AS max_salary
+FROM
+    job_postings_fact
+WHERE
+    job_location LIKE '%San Francisco%'
+    AND
+    salary_year_avg IS NOT NULL;
+
+
+
+
+
+

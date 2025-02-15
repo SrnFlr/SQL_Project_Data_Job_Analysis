@@ -8,3 +8,13 @@ Only include job postings where a yearly salary is specified (WHERE salary_year_
 NOTE: If you’re following along in the video we’ll cover IS NOT NULL here shortly
 
 */
+
+SELECT
+    SUM(salary_year_avg) / COUNT (salary_year_avg) AS total_avg_salary
+FROM 
+    job_postings_fact
+WHERE
+    job_work_from_home IS TRUE
+    AND
+    salary_year_avg IS NOT NULL;
+

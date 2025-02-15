@@ -7,3 +7,11 @@ Only include job postings where a yearly salary is specified (WHERE salary_year_
 NOTE: If you’re following along in the video, we’ll cover IS NOT NULL here shortly
 
 */
+
+SELECT
+	AVG(salary_year_avg) AS avg_yearly_salary
+FROM job_postings_fact
+WHERE 
+	salary_year_avg IS NOT NULL
+    AND
+    job_title_short = 'Data Scientist';

@@ -11,3 +11,17 @@ NOTE:
 If you try to filter out remote work jobs using job_location, you’ll find that Anywhere appears twice, this is due to this column needing to be cleaned up. (I.e., one value has an extra trailing space). So it won’t return the correct results.
 
 */
+
+SELECT 
+  job_location,
+  COUNT(job_id) AS not_remote_job_count
+FROM 
+  job_postings_fact
+WHERE 
+  job_work_from_home = false
+GROUP BY 
+  job_location
+HAVING 
+  AVG(salary_year_avg) > 70000 
+ORDER BY 
+  not_remote_job_count DESC;
