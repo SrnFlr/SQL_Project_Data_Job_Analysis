@@ -2,4 +2,9 @@
 /.vscode
 /csv_files
 /_comparisons_basics
-/wildcard_samples
+/aggregation_basics
+/alias_samples
+/joins_basics
+/null_basics
+/operations_basics
+/wildcards_samples
